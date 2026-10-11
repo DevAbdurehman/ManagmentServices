@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TaskManagement.Domain.Entities;
+using ManagmentServices.Domain.Entities;
 
-namespace TaskManagement.Infrastructure.Data;
+namespace ManagmentServices.Infrastructure.Data;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDBContext : DbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+    public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options)
         : base(options)
     {
     }

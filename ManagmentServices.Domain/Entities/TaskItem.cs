@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManagmentServices.Domain.Entities
 {
-    public class Task
+    public class TaskItem
     {
         public int Id { get; set; }
         public string? Title { get; set; }
