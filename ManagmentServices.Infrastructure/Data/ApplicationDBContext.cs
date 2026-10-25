@@ -10,5 +10,5 @@ public class ApplicationDBContext : DbContext
     {
     }
 
-    public DbSet<Task> Tasks { get; set; }
+    public DbSet<TaskItem> TaskItems { get; set; }
 }

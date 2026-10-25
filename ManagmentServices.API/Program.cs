@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ManagmentServices.Infrastructure.Data;
+using ManagmentServices.Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,9 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 var app = builder.Build();
+builder.Services.AddInfrastructure();
 
 if (app.Environment.IsDevelopment())
 {
